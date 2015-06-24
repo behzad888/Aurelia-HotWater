@@ -1,0 +1,25 @@
+﻿<template>
+    <section class="container">
+        <h2>${heading}</h2>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3>Examples for destination (click to update)</h3>
+                    </div>
+                    <div class="panel-body ">
+
+                        <ul class="well well-sm">
+                            <li class="btn btn-default btn-raised" style="cursor:pointer" click.trigger="$parent.selectExample(example)" repeat.for="example of examples">${example}</li>
+                        </ul>
+                        <div class="form-group">
+                            <label for="ln">Destination</label>
+                            <input type="text" value.bind="destination" class="form-control" id="dst" placeholder="destination">
+                        </div>
+                        <button class="btn btn-material-green-400" click.trigger="navigateToDestination()">Navigate to destination</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</template>

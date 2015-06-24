@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>TypeScript HTML HotWater</title>
+
+    <link rel="stylesheet" type="text/css" href="/Content/bootstrap.min.css">
+    <link rel="stylesheet" href="app.css" type="text/css" />
+    <!-- Material Design for Bootstrap -->
+    <link href="/Content/material/dist/css/material-wfont.min.css" rel="stylesheet">
+    <link href="/Content/material/dist/css/ripples.min.css" rel="stylesheet">
+    <!-- Page style -->
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .header-panel {
+            background-color: #E81D62;
+            height: 100px;
+            position: relative;
+            z-index: 3;
+        }
+
+            .header-panel div {
+                /*position: relative;*/
+                height: 100%;
+            }
+
+            .header-panel h1 {
+                color: #FFF;
+                font-size: 20px;
+                font-weight: 400;
+                position: absolute;
+                bottom: 10px;
+                padding-left: 35px;
+            }
+
+            .header-panel a {
+                color: #FFF;
+                font-size: 15px;
+                font-weight: 400;
+                position: absolute;
+                padding-top: 10px;
+                padding-left: 35px;
+            }
+
+        .menu {
+            overflow: auto;
+            padding: 0;
+            background: #2196F3;
+            color: white;
+        }
+
+            .menu, .menu * {
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                user-select: none;
+            }
+
+                .menu ul {
+                    padding: 0;
+                    direction: rtl;
+                    margin: 7px 0;
+                }
+
+                    .menu ul li {
+                        list-style: none;
+                        padding: 20px 0 20px 50px;
+                        font-size: 15px;
+                        font-weight: normal;
+                        cursor: pointer;
+                        padding-right: 20px;
+                    }
+
+                        .menu ul li.active {
+                            background: #2196F3;
+                            position: relative;
+                        }
+
+                        .menu ul li a {
+                            color: white;
+                            text-decoration: none;
+                        }
+    </style>
+
+    <!-- jQuery -->
+    <script src="/Content/material/dist/js/jquery-2.1.1.min.js"></script>
+</head>
+
+<body aurelia-app="app/app">
+    <div class="splash">
+        <div class="message">Aurelia HotWater</div>
+        <i class="mdi-action-cached fa-spinner"></i>
+    </div>
+
+    <script src="App/aurelia/webcomponentsjs/webcomponents.min.js"></script>
+    <script src="App/aurelia/core-js/client/core.js"></script>
+    <script src="Scripts/typings/requirejs/require.js"></script>
+    <script>
+        var baseUrl = "";
+        require.config({
+            baseUrl: baseUrl,
+            paths: {
+                aurelia: baseUrl + "/App/aurelia",
+                views: baseUrl + "/App/"
+            }
+        });
+
+        require(["aurelia/aurelia-bundle"], function (au) { });
+    </script>
+</body>
+</html>

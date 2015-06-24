@@ -1,0 +1,99 @@
+<template>
+    <section class="container">
+        <h2>${heading}</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <form class="form-horizontal" submit.delegate="welcome()">
+                    <fieldset>
+
+                        <div class="form-group">
+                            <label for="fn">First Name</label>
+                            <input type="text" value.bind="firstName" class="form-control" id="fn" placeholder="first name">
+                        </div>
+                        <div class="form-group">
+                            <label for="ln">Password</label>
+                            <input type="text" value.bind="lastName" class="form-control" id="ln" placeholder="last name">
+                        </div>
+                        <div class="form-group">
+                            <label>Full Name</label>
+                            <p class="help-block">${fullName}</p>
+                        </div>
+                        <button type="submit" class="btn btn-material-green-400">Submit</button>
+                    </fieldset>
+                </form>
+            </div>
+
+            <div class="col-md-6">
+
+                <div class="widget wviolet">
+                    <div data-cc-widget-header title="People"
+                         allow-collapse="true"></div>
+                    <div class="text-center text-info">
+                        <table class="table table-condensed table-striped">
+                            <thead>
+                                <tr>
+                                    <th>First Name</th>
+                                    <th>Last Name</th>
+                                    <th>Age</th>
+                                    <th>Location</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr repeat.for="item of people">
+                                    <td>${item.firstName}</td>
+                                    <td>${item.lastName}</td>
+                                    <td>${item.age}</td>
+                                    <td>${item.location}</td>
+                                </tr>
+                            </tbody>
+                            <tfoot ng-show="!showAdd">
+                                <tr>
+                                    <td>
+                                        <span class="glyphicon-plus" click.trigger="clickAdd()">
+                                        </span>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <section class=" col-md-6"></section>
+            <section class=" col-md-6">
+                <div class="panel panel-default" show.bind="showAdd">
+                    <div class="panel-heading">Create New Project</div>
+                    <div class="panel-body">
+                        <form role="form">
+                            <div class="form-group">
+                                <label for="name">FirstName</label>
+                                <input type="text" class="form-control" id="name"
+                                       placeholder="Enter FirstName" value.bind="newPeople.firstName">
+                            </div>
+                            <div class="form-group">
+                                <label for="family">LastName</label>
+                                <input type="text" class="form-control" id="family"
+                                       placeholder="Enter LastName" value.bind="newPeople.lastName">
+                            </div>
+                            <div class="form-group">
+                                <label for="age">Age</label>
+                                <input type="text" class="form-control" id="age"
+                                       placeholder="Enter Age" value.bind="newPeople.age">
+                            </div>
+                            <div class="form-group">
+                                <label for="location">Location</label>
+                                <input type="text" class="form-control" id="location"
+                                       placeholder="Enter Location" value.bind="newPeople.location">
+                            </div>
+                            <button click.trigger="addPeople(newPeople)" class="btn btn-default">Submit</button>
+                            <button click.trigger="clickAdd()" class="btn btn-default">Cancel</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </section>
+</template>

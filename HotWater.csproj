@@ -1,0 +1,295 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{58CEC855-C6BF-49DE-9A9A-3AEE74B2463B}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HotWater</RootNamespace>
+    <AssemblyName>HotWater</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TypeScriptToolsVersion>1.4</TypeScriptToolsVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="app.css" />
+    <Content Include="App\admin\admin-home.html" />
+    <Content Include="App\admin\admin-logout.html" />
+    <Content Include="App\admin\admin-profile.html" />
+    <Content Include="App\admin\admin.html" />
+    <Content Include="App\admin\login.html" />
+    <Content Include="App\aurelia\app-state.js" />
+    <Content Include="App\aurelia\core-js\client\core.js" />
+    <Content Include="App\aurelia\core-js\client\core.min.js" />
+    <Content Include="App\aurelia\core-js\client\library.js" />
+    <Content Include="App\aurelia\core-js\client\library.min.js" />
+    <Content Include="App\aurelia\core-js\client\shim.js" />
+    <Content Include="App\aurelia\core-js\client\shim.min.js" />
+    <Content Include="App\aurelia\webcomponentsjs\webcomponents.min.js" />
+    <Content Include="App\app.html" />
+    <Content Include="App\layout\nav-bar.html" />
+    <Content Include="App\dashboard\dashboard.html" />
+    <Content Include="App\navigation\navigation.html" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\main-logo.png" />
+    <Content Include="Content\material\demo\imgs\banner.jpg" />
+    <Content Include="Content\material\demo\imgs\download.png" />
+    <Content Include="Content\material\demo\imgs\gittip-button.jpg" />
+    <Content Include="Content\material\demo\imgs\gittip.png" />
+    <Content Include="Content\material\demo\imgs\issue.png" />
+    <Content Include="Content\material\demo\imgs\issues-button.jpg" />
+    <Content Include="Content\material\demo\imgs\palette.jpg" />
+    <Content Include="Content\material\dist\css\jquery.dropdown.css" />
+    <Content Include="Content\material\dist\css\material-wfont.css" />
+    <Content Include="Content\material\dist\css\material-wfont.min.css" />
+    <Content Include="Content\material\dist\css\material.css" />
+    <Content Include="Content\material\dist\css\material.min.css" />
+    <Content Include="Content\material\dist\css\ripples.css" />
+    <Content Include="Content\material\dist\css\ripples.min.css" />
+    <Content Include="Content\material\dist\fonts\LICENSE.txt" />
+    <Content Include="Content\material\dist\fonts\Material-Design-Icons.svg" />
+    <Content Include="Content\material\dist\js\bootstrap.min.js" />
+    <Content Include="Content\material\dist\js\jquery-2.1.1.js" />
+    <Content Include="Content\material\dist\js\jquery-2.1.1.min.js" />
+    <Content Include="Content\material\dist\js\jquery.dropdown.js" />
+    <Content Include="Content\material\dist\js\jquery.nouislider.js" />
+    <Content Include="Content\material\dist\js\jquery.nouislider.min.js" />
+    <Content Include="Content\material\dist\js\material.js" />
+    <Content Include="Content\material\dist\js\material.min.js" />
+    <Content Include="Content\material\dist\js\ripples.js" />
+    <Content Include="Content\material\dist\js\ripples.min.js" />
+    <Content Include="Content\material\dist\test.html" />
+    <Content Include="Content\material\fonts\LICENSE.txt" />
+    <Content Include="Content\material\fonts\Material-Design-Icons.svg" />
+    <Content Include="Content\material\materialize.css" />
+    <Content Include="Content\material\materialize.js" />
+    <Content Include="Content\material\scripts\material.js" />
+    <Content Include="Content\material\scripts\ripples.js" />
+    <Content Include="Content\material\styles.css" />
+    <Content Include="Content\material\ui-aurelia.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\Site.css" />
+    <Content Include="index.html" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="App\aurelia\core-js\client\core.min.js.map" />
+    <Content Include="App\aurelia\core-js\client\core.min.map" />
+    <Content Include="App\aurelia\core-js\client\library.min.js.map" />
+    <Content Include="App\aurelia\core-js\client\library.min.map" />
+    <Content Include="App\aurelia\core-js\client\shim.min.js.map" />
+    <Content Include="App\aurelia\core-js\client\shim.min.map" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="Content\material\dist\css\material-wfont.css.map" />
+    <Content Include="Content\material\dist\css\material-wfont.min.css.map" />
+    <Content Include="Content\material\dist\css\material.css.map" />
+    <Content Include="Content\material\dist\css\material.min.css.map" />
+    <Content Include="Content\material\dist\css\ripples.css.map" />
+    <Content Include="Content\material\dist\css\ripples.min.css.map" />
+    <Content Include="Content\material\dist\fonts\Material-Design-Icons.eot" />
+    <Content Include="Content\material\dist\fonts\Material-Design-Icons.ttf" />
+    <Content Include="Content\material\dist\fonts\Material-Design-Icons.woff" />
+    <Content Include="Content\material\dist\js\material.min.js.map" />
+    <Content Include="Content\material\dist\js\ripples.min.js.map" />
+    <Content Include="Content\material\fonts\Material-Design-Icons.eot" />
+    <Content Include="Content\material\fonts\Material-Design-Icons.ttf" />
+    <Content Include="Content\material\fonts\Material-Design-Icons.woff" />
+    <Content Include="Content\material\fonts\roboto\Roboto-Bold.ttf" />
+    <Content Include="Content\material\fonts\roboto\Roboto-Light.ttf" />
+    <Content Include="Content\material\fonts\roboto\Roboto-Medium.ttf" />
+    <Content Include="Content\material\fonts\roboto\Roboto-Regular.ttf" />
+    <Content Include="Content\material\fonts\roboto\Roboto-Thin.ttf" />
+    <Content Include="Content\material\less\material-wfont.less" />
+    <Content Include="Content\material\less\material.less" />
+    <Content Include="Content\material\less\ripples.less" />
+    <Content Include="Content\material\less\_alerts.less" />
+    <Content Include="Content\material\less\_buttons.less" />
+    <Content Include="Content\material\less\_cards.less" />
+    <Content Include="Content\material\less\_checkboxes.less" />
+    <Content Include="Content\material\less\_colors.less" />
+    <Content Include="Content\material\less\_dialogs.less" />
+    <Content Include="Content\material\less\_dividers.less" />
+    <Content Include="Content\material\less\_icons-material-design.less" />
+    <Content Include="Content\material\less\_icons.less" />
+    <Content Include="Content\material\less\_inputs.less" />
+    <Content Include="Content\material\less\_labels.less" />
+    <Content Include="Content\material\less\_lists.less" />
+    <Content Include="Content\material\less\_mixins.less" />
+    <Content Include="Content\material\less\_navbar.less" />
+    <Content Include="Content\material\less\_panels.less" />
+    <Content Include="Content\material\less\_plugin-dropdownjs.less" />
+    <Content Include="Content\material\less\_plugin-nouislider.less" />
+    <Content Include="Content\material\less\_plugin-selectize.less" />
+    <Content Include="Content\material\less\_plugin-snackbarjs.less" />
+    <Content Include="Content\material\less\_popups.less" />
+    <Content Include="Content\material\less\_progress.less" />
+    <Content Include="Content\material\less\_radios.less" />
+    <Content Include="Content\material\less\_shadows.less" />
+    <Content Include="Content\material\less\_tabs.less" />
+    <Content Include="Content\material\less\_togglebutton.less" />
+    <Content Include="Content\material\less\_variables.less" />
+    <Content Include="Content\material\less\_welljumbo.less" />
+    <Content Include="Content\material\sass\material-wfont.scss" />
+    <Content Include="Content\material\sass\material.scss" />
+    <Content Include="Content\material\sass\ripples.scss" />
+    <Content Include="Content\material\sass\_alerts.scss" />
+    <Content Include="Content\material\sass\_animations.scss" />
+    <Content Include="Content\material\sass\_buttons.scss" />
+    <Content Include="Content\material\sass\_cards.scss" />
+    <Content Include="Content\material\sass\_checkboxes.scss" />
+    <Content Include="Content\material\sass\_icons-material-design.scss" />
+    <Content Include="Content\material\sass\_icons.scss" />
+    <Content Include="Content\material\sass\_inputs.scss" />
+    <Content Include="Content\material\sass\_lists.scss" />
+    <Content Include="Content\material\sass\_mixins.scss" />
+    <Content Include="Content\material\sass\_navbar.scss" />
+    <Content Include="Content\material\sass\_plugin-nouislider.scss" />
+    <Content Include="Content\material\sass\_plugin-snackbarjs.scss" />
+    <Content Include="Content\material\sass\_popups.scss" />
+    <Content Include="Content\material\sass\_progress.scss" />
+    <Content Include="Content\material\sass\_radios.scss" />
+    <Content Include="Content\material\sass\_shadows.scss" />
+    <Content Include="Content\material\sass\_tabs.scss" />
+    <Content Include="Content\material\sass\_variables.scss" />
+    <Content Include="Content\material\sass\_welljumbo.scss" />
+    <Content Include="Content\material\dist\fonts\roboto\Roboto-Regular.woff2" />
+    <Content Include="Content\material\dist\fonts\roboto\Roboto-Regular.woff" />
+    <Content Include="Content\material\dist\fonts\roboto\RobotoDraft.woff2" />
+    <Content Include="Content\material\dist\fonts\roboto\RobotoDraft.woff" />
+    <Content Include="Content\material\dist\fonts\roboto\Roboto-Bold.woff2" />
+    <Content Include="Content\material\dist\fonts\roboto\Roboto-Bold.woff" />
+    <Content Include="Content\material\dist\fonts\roboto\Roboto-Thin.woff2" />
+    <Content Include="Content\material\dist\fonts\roboto\Roboto-Thin.woff" />
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\respond.js" />
+    <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\typings\requirejs\require.js" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="App\admin\admin-home.ts" />
+    <TypeScriptCompile Include="App\admin\admin-logout.ts" />
+    <TypeScriptCompile Include="App\admin\admin-profile.ts" />
+    <TypeScriptCompile Include="App\admin\admin.ts" />
+    <TypeScriptCompile Include="App\admin\login.ts" />
+    <TypeScriptCompile Include="App\app.ts" />
+    <TypeScriptCompile Include="App\aurelia\app-state.ts" />
+    <TypeScriptCompile Include="App\layout\nav-bar.ts" />
+    <TypeScriptCompile Include="App\dashboard\dashboard.ts" />
+    <TypeScriptCompile Include="App\navigation\navigation.ts" />
+    <TypeScriptCompile Include="App\services\datacontext.ts" />
+    <TypeScriptCompile Include="Scripts\typings\aurelia-amd\aurelia-amd.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\aurelia\aurelia.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\core-js\core-js.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\es6-promise\es6-promise.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\esri\esri.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\jquery.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\Q.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\requirejs\require.d.ts" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+    <TypeScriptModuleKind>amd</TypeScriptModuleKind>
+    <TypeScriptTarget>ES5</TypeScriptTarget>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>7457</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:7457/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>
